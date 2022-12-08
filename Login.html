@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Roboto";
+  font-size: 27px;
+  padding: 200px 10px;
+}
+
+* {
+  box-sizing: border-box;
+  background: #f2f2f2;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+  
+}
+
+.container {
+  background-color: #ccc;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid #6DB6FF;
+  border-radius: 8px;
+  background-color: rgb(240, 234, 234);
+}
+
+input[type=password] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid #6DB6FF;
+    border-radius: 8px;
+    background-color: rgb(240, 234, 234);
+    
+  }
+label {
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 2px;
+  margin-left: 5px;
+  
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  
+}
+
+.btn {
+  background-color: #6DB6FF;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  inline-size: 90px;
+  margin-left: 5px;
+}
+.btn2 {
+  background-color: #6DB6FF;
+  color: white;
+  padding: 12px;
+  margin: 10px 20%;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  inline-size: 80px;
+}
+
+.btn:hover,.btn2:hover {
+  background-color: #52a8ff;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+.Reg {
+    margin: auto;
+    width: 40%;
+    border: 3px solid #6DB6FF;
+    padding: 30px;
+    border-radius: 15px;
+    
+  }
+span.price {
+  float: right;
+  color: grey;
+  
+}
+
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<body>
+    <div class="Reg">
+    <form id="register-form" action="/booking.html">           
+        <label>Username:</label>                    <!--Making a form and giving it a id to call it later -->
+        <input type="text" placeholder="Username">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Register" class="btn">
+        <input type="submit" value="Login" class="btn2">
+    </form>
+</div>
+    <!-- <script>// Retreiving data from form by making a variable named form and getting deatails using getelementbyid calling using form id     
+        const form = document.getElementById('register-form');// This event listener will fire registerUser function when submit even is emit
+        form.addEventListener('submit', registerUser);
+        function registerUser(event) { // This line will prevent the default behaviour of submit event like reloadin of page and other events (explore)
+            event.preventDefault();
+        }
+        
+    </script> -->
+</body>
+
+</html>
